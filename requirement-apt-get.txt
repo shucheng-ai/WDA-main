@@ -1,0 +1,8 @@
+libboost-all-dev
+python3-pip
+libpython3-dev
+vim
+libgoogle-glog-dev
+git
+rsync
+libopencv-dev

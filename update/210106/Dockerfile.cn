@@ -1,0 +1,2 @@
+from cyborg/webserver
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ shapely

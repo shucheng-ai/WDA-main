@@ -1,0 +1,3 @@
+from cyborg/webserver:1.0
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ cython scipy
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ open3d

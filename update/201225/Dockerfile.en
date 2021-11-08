@@ -1,0 +1,4 @@
+from cyborg/webserver
+RUN apt-get update
+RUN apt-get -y install rsync libopencv-dev
+RUN pip3 install gevent ezdxf

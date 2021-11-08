@@ -1,0 +1,9 @@
+numpy
+cmake
+scikit-build
+opencv-python
+flask
+flask-cors
+SQLAlchemy
+sysrsync
+gevent

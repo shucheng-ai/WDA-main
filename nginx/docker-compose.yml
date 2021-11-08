@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: cyborg-nginx
+    ports:
+      - '38088:80'
+    volumes:
+      - '..:/www/'
+      - './conf.d:/etc/nginx/conf.d/'
+      - './htpasswd:/var/htpasswd/.htpasswd'
