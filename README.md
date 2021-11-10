@@ -1,37 +1,62 @@
-# 初始部署
+# Warehouse Design Automation
+Website: [IAILabs](http://www.iailabs.com/)
+
+User manual:
+
+Lisence: [Apache 2.0](https://github.com/shucheng-ai/WDA-main/blob/main/LICENSE)
+
+## Abstract
+An AI tool to generate warehouse layout design in 2D and 3D format. WDA can interpret warehouse structures from CAD drawings, and generate layout designs of inventory.
+
+#### Core feature of WDA:
+- CAD interpretation - Identify wall, pillar, door, fire hydrant and other obstacles from the warehouse CAD drawing
+- Customize storage type - APR/Double Deep | Pallet Stacking | Carton Shelving types are available and enable customization
+- Storage Design - Algorithm avoid obstacles and place the racks with max capacity
+- Visualization - Present layout design in 2D CAD drawing and 3D model.
+
+## Installation
 ```
 git clone http://gitlab.shucheng-ai.com/layout/main.git
 git submodule init
 git submodule update
-国内 git submodule foreach bash build.sh
-国外 git submodule foreach bash build.sh en
+git submodule foreach bash build.sh en
 ```
-# 检查更新
+## Project Structure with Submodules
 ```
-git pull
-git submodule update 
-git submodule foreach bash update.sh
+.
+├── 3d                    
+├── cad
+├── core
+├── database
+├── dwg2dxf
+├── nginx  
+├── tools
+├── update
+├── wda-auth-decorators      
+├── wda-cloud                   
+├── web                    
+├── web-server                   
+└── ...
 ```
-# 运行
+## Run
+run server
 ```
-本地部署 bash run.sh
-本地测试 bash run.sh dev
-服务器部署 bash run.sh nginx
+bash run.sh
 ```
-# 提交更新
-对其中一个子项目进行的修改，如core，并提交到gitlab上
+developer mode
 ```
-git add -A
-git commit -m "xxx"
-git fetch origin
-git merge origin/master
-git push
+bash run.sh dev
+```
+nginx mode
+```
+bash run.sh nginx
+```
+### Nginx Configuration
+
+```
+port：38088
+user：shucheng 
+password：Shucheng@2021Shanghai
 ```
 
-## nginx 配置
 
-```
-端口：38088
-账号：shucheng 
-密码：Shucheng@2021Shanghai
-```
