@@ -1,4 +1,6 @@
 # Warehouse Design Automation
+[EN](https://github.com/shucheng-ai/WDA-main/blob/main/README.md) | [中文](https://github.com/shucheng-ai/WDA-main/blob/main/README-zh.md)
+
 官网: [IAILabs](http://www.iailabs.com/)
 
 用户手册:
@@ -18,7 +20,7 @@ WDA是一款仓库货架智能设计工具，支持读入dwg及dxf格式的设�
 
 ## 安装
 ```
-git clone http://gitlab.shucheng-ai.com/layout/main.git
+git clone https://github.com/shucheng-ai/WDA-main.git
 git submodule init
 git submodule update
 git submodule foreach bash build.sh

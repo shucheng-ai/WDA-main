@@ -1,4 +1,7 @@
 # Warehouse Design Automation
+
+[EN](https://github.com/shucheng-ai/WDA-main/blob/main/README.md) | [中文](https://github.com/shucheng-ai/WDA-main/blob/main/README-zh.md)
+
 Website: [IAILabs](http://www.iailabs.com/)
 
 User manual:
@@ -16,7 +19,7 @@ An AI tool to generate warehouse layout design in 2D and 3D format. WDA can inte
 
 ## Installation
 ```
-git clone http://gitlab.shucheng-ai.com/layout/main.git
+git clone https://github.com/shucheng-ai/WDA-main.git
 git submodule init
 git submodule update
 git submodule foreach bash build.sh en
