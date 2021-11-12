@@ -1,3 +1,21 @@
 [submodule "tools"]
 	path = tools
 	url = https://github.com/shucheng-ai/WDA-tools.git
+[submodule "core"]
+	path = core
+	url = https://github.com/shucheng-ai/WDA-core.git
+[submodule "cad"]
+	path = cad
+	url = https://github.com/shucheng-ai/WDA-cad.git
+[submodule "web"]
+	path = web
+	url = https://github.com/shucheng-ai/WDA-web.git
+[submodule "web-server"]
+	path = web-server
+	url = https://github.com/shucheng-ai/WDA-web-server.git
+[submodule "3d"]
+	path = 3d
+	url = https://github.com/shucheng-ai/WDA-3d.git
+[submodule "dwg2dxf"]
+	path = dwg2dxf
+	url = https://github.com/shucheng-ai/WDA-dwg2dxf.git
