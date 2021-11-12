@@ -1,0 +1,10 @@
+version: "3"
+services:
+  redis:
+    container_name: cyborg-redis
+    image: redis
+    command: redis-server --requirepass shucheng2020
+    ports:
+      - 15479:6379
+    volumes:
+      - ../db_data/layout2_redis:/data

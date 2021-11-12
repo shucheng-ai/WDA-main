@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mongo-container:
+    image: mongo:4.0
+    container_name: cyborg-mongodb
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: shucheng
+        MONGO_INITDB_ROOT_PASSWORD: shucheng2020
+    ports:
+      - 15437:27017
+    volumes:
+      - ../db_data/layout2_mongo/data/:/data/db
+      - ../db_data/layout2_mongo/mongo-entrypoint/:/docker-entrypoint-initdb.d/
