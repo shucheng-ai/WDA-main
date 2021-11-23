@@ -1,0 +1,4 @@
+flask
+SQLAlchemy
+psycopg2_binary==2.8.5
+setuptools

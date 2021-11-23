@@ -1,0 +1,21 @@
+version: "3"
+services:
+    server:
+      image: wda/cloud
+      container_name: wda-cloud-server-dev-container
+      command: >
+          /bin/bash -c "
+            cd /www/
+            cd wda-auth-decorators
+            sh setup.sh
+            cd /www/
+            cd wda-cloud
+            cd wda_server
+            ls
+            python3 start_server.py wda_cloud_server
+          "
+      ports:
+          - 8083:8000
+      volumes:
+          - ../:/www/
+          - ../www/project/:/project/

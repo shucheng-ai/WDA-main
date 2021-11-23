@@ -1,0 +1,14 @@
+version: "3"
+services:
+  node:
+    image: "shucheng/node14"
+    container_name: wda-cloud-dist-container
+    user: "root"
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: >
+      /bin/bash -c "
+      cd ./wda;
+      npm run build;
+      "

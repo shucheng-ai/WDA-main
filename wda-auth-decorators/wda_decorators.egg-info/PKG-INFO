@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wda-decorators
+Version: 0.0.1
+Summary: wda auth decorators
+Home-page: http://shucheng.ai
+Author: wangpeifeng
+Author-email: root@arthurnone.com
+License: MIT Licence
+Keywords: pip
+Platform: any
+
+wda auth decorators for python
+

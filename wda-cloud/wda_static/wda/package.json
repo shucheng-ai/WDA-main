@@ -1,0 +1,61 @@
+{
+  "name": "wda",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.6.5",
+    "axios": "^0.20.0",
+    "babel-plugin-import": "^1.13.1",
+    "core-js": "^3.6.5",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "store": "^2.0.12",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.22.1",
+    "vue-pdf": "^4.2.0",
+    "vue-router": "^3.4.6",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": 0,
+      "quotes": [
+        0,
+        "single"
+      ],
+      "semi": 0,
+      "no-unused-vars": 1,
+      "no-undef": 1
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

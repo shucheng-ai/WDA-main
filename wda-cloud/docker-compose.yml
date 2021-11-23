@@ -1,0 +1,30 @@
+version: "3"
+services:
+    server:
+      image: wda/cloud
+      container_name: wda-cloud-server-container
+      command: >
+          /bin/bash -c "
+            cd /www/
+            cd wda-auth-decorators
+            sh setup.sh
+            cd /www/
+            cd wda-cloud
+            cd wda_server
+            ls
+            python3 start_server.py wda_cloud_server
+          "
+      ports:
+          - 8083:8000
+      volumes:
+          - ../:/www/
+          - /www/project/:/project/
+      networks:
+        network:
+          ipv4_address: 192.179.5.1
+networks:
+    network:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 192.179.5.0/16

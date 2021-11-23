@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    image: "shucheng/node14"
+    container_name: wda-cloud-static-container
+    user: "root"
+    working_dir: /app
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+    command: >
+      /bin/bash -c "
+      npm run serve;
+      "
