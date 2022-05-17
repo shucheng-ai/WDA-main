@@ -13,8 +13,8 @@ Lisence: [Apache 2.0](https://github.com/shucheng-ai/WDA-main/blob/main/LICENSE)
 ## Abstract
 An AI tool to generate warehouse layout design in 2D and 3D format. WDA can interpret warehouse structures from CAD drawings, and generate layout designs of inventory.
 To quickly try WDA use our [demo server](http://67.225.180.60:38088/) which comes with all the features. 
-admin:demo
-pass:demo
+- admin:demo
+- pass:demo
 
 ### How to Use
 The layout design process contains 4 steps:
