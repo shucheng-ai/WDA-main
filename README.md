@@ -4,15 +4,17 @@
 
 Website: [IAILabs](http://www.iailabs.com/)
 
-Documentation: user manual to be continued
+Documentation: [User manual](http://www.iailabs.com/manual)
 
-Frequently asked questions: link here
+Frequently asked questions: link to be continued
 
 Lisence: [Apache 2.0](https://github.com/shucheng-ai/WDA-main/blob/main/LICENSE)
 
 ## Abstract
 An AI tool to generate warehouse layout design in 2D and 3D format. WDA can interpret warehouse structures from CAD drawings, and generate layout designs of inventory.
-To quickly try WDA use our [demo server](http://13.49.64.148:38088/) which comes with all the features.
+To quickly try WDA use our [demo server](http://67.225.180.60:38088/) which comes with all the features. 
+admin:demo
+pass:demo
 
 ### How to Use
 The layout design process contains 4 steps:
@@ -29,13 +31,17 @@ The layout design process contains 4 steps:
 
 
 ## Installation
-We use docker for most of our submodules, the easiest and quickest way to setup WDA is to start at WDA-main and use the docker images we provide.
-Build and update every submodule.
+We use docker for most of our submodules, the easiest and quickest way to setup WDA is to start at WDA-main and use the docker images we provide. 
+
+**Please make sure [Docker](https://docs.docker.com/get-docker/) is correctly installed.**
+
+Build and update every submodule. (Building dockers for submodules might take a while)
 ```
 git clone https://github.com/shucheng-ai/WDA-main.git
+cd WDA-main
 git submodule init
 git submodule update
-git submodule foreach bash build.sh en # building dockers for submodules, this might take a while
+git submodule foreach bash build.sh en 
 git submodule foreach bash update.sh
 ```
 Note that /database has to be build seperately.

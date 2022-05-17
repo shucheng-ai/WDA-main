@@ -3,7 +3,7 @@
 
 官网: [IAILabs](http://www.iailabs.com/)
 
-用户手册:
+相关文档: [用户手册](http://www.iailabs.com/manual)
 
 Lisence: [Apache 2.0](https://github.com/shucheng-ai/WDA-main/blob/main/LICENSE)
 
@@ -19,8 +19,10 @@ WDA是一款仓库货架智能设计工具，支持读入dwg及dxf格式的设�
 
 
 ## 安装
+本项目使用Docker，请确保[Docker](https://docs.docker.com/get-docker/)安装正确。
 ```
 git clone https://github.com/shucheng-ai/WDA-main.git
+cd WDA-main
 git submodule init
 git submodule update
 git submodule foreach bash build.sh
